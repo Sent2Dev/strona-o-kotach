@@ -1,0 +1,237 @@
+/* style dla stron o kotach*/
+
+body {
+    font-family: poppins;
+ background-color: white;
+} 
+.omnie {
+    margin-top: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    grid-template-rows: 180px 180px ;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+    grid-gap: 15px;
+    
+}
+.webtitle {
+    font-size: 30px;
+    text-align: center;
+  
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.aboutCat {
+    width: 480px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #ffffff;
+    text-align: center; 
+    grid-column: 1;
+    grid-row: 1/ -1;  
+    border: 1px solid black;
+}
+.funFacts {
+    width: 480px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+margin-left:10px ;
+    margin-right: 10px;
+    background-color: #ffffff;
+    text-align: center; 
+    color: black;  
+    grid-column: 1;
+    grid-row: 2 / -1;
+    border: 1px solid black;
+}
+
+.imageOfCat {
+    height: 375px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;   
+    grid-column: 2;
+    grid-row: 1/ -1;
+    color: white;
+}
+   .text {
+       text-align: center;
+       padding:unset ;
+       font-size: 15px;
+       color: black;
+   }
+   .Normaltext {
+       font-size: 10px;
+       padding: 7px;
+       color: black;
+   }
+   @media only screen and (max-width:450px) {
+       .container {
+        grid-template-columns: 500px;
+        grid-template-rows: 180px 180px 345px;
+        gap: 15px;
+       }
+       .aboutCat{
+        grid-column: 1;
+        grid-row: 1;  
+        width: 345px;
+        height: fit-content;
+
+       }
+       .funFacts{
+        grid-column: 1;
+        grid-row: 2 ;
+        width: 345px;
+        height: fit-content;
+
+       }
+       .imageOfCat{
+        grid-column: 1;
+        grid-row: 3 ;
+        width: 345px;
+        height: auto;
+        padding-top: 20px;
+        margin-right: 20px;
+        justify-content: center;
+       }
+   }
+/*  koniec stylow dla stron o kotach*/
+
+
+
+
+
+
+
+/* @media only screen and (max-width:769px) {
+    .container {
+        width: 510px;
+        height: 780px;
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+   
+        grid-template-columns: 500px;
+        grid-template-rows: 180px 180px 375px;
+      
+    
+        margin-top: 0;
+        grid-gap: 15px;
+    }
+    .aboutCat {
+        width: 480px;
+        height: 180px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        color: white;
+        background-color: blue;
+        text-align: center; 
+        grid-column: 1;
+        grid-row: 1;  
+    
+    }
+    .funFacts {
+        width: 480px;
+        height: 180px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    margin-left:50px ;
+        margin-right: 10px;
+        background-color: rgb(255, 0, 0);
+        text-align: center; 
+        color: white;  
+        grid-column: 1;
+        grid-row: 2 ;
+    }
+    .imageOfCat{
+    height: 375px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 10px;
+    background-color: rgb(7, 7, 7);
+    text-align: center;   
+    grid-column: 1;
+    grid-row: 3 ;
+    color: white;
+    }
+    .webtitle {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;}
+}
+@media only screen and (max-width:376px) {
+    .container {
+     
+     
+        display: grid;
+        margin-left: 100px;
+        grid-template-columns: 345px;
+        grid-template-rows: 180px 180px 375px;
+        margin-top: 0;
+        grid-gap: 15px; }    
+ .aboutCat {
+            width: 345px;
+            height: 180px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: white;
+            background-color: blue;
+            text-align: center; 
+            grid-column: 1;
+            grid-row: 1;  
+        
+        }
+        .funFacts {
+            width: 345px;
+            height: 180px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            margin-right: 10px;
+            background-color: rgb(255, 0, 0);
+            text-align: center; 
+            color: white;  
+            grid-column: 1;
+            grid-row: 2 ;
+        }
+        .imageOfCat{
+        width: 345px;
+        height: 345px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       
+        margin-right: 10px;
+        background-color: rgb(7, 7, 7);
+        text-align: center;   
+        grid-column: 1;
+        grid-row: 3 ;
+        color: white;
+        }
+        .webtitle {
+            width: 375px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 38%;
+    }
+    .funFacts:hover {
+        width: 345px;
+        height: 180px; }
+        .aboutCat {
+            width: 345px;
+            height: 180px; }   
+} */
